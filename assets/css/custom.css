@@ -1,7 +1,0 @@
-.one-full.column p, .one-full.column h1 { margin-bottom: 0; }
-
-.me2 {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-}
