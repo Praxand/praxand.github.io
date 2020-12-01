@@ -1,119 +1,108 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109228988-3"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-109228988-3');
-    </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
-    <meta name="description" content="Official Praxand website.">
-    <meta name="keywords" content="Praxand">
-    <meta name="author" content="Jay Cheung">
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/x-icon" href="/img/favicon/favicon-32x32.png">
-    <link rel="manifest" href="/img/favicon/site.webmanifest">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.min.css">
+    <!-- Basic Page Needs -->
     <title>Praxand</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Meta Data -->
+    <meta content="Praxand" property="og:title" />
+    <meta content="Praxand's Website" property="og:description" />
+    <meta content="Praxand's Website" name="description" />
+    <meta name="theme-color" content="#98ff98">
+    <meta content="https://praxand.ga/assets/images/profile.jpg" property="og:image" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <!-- Twitter Embed [Required] -->
+    <meta name="twitter:site" content="@Praxand_">
+    <meta name="twitter:card" content="summary">
+
+    <!-- CSS & JavaScript -->
+    <link href="assets/css/modesta.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/custom.css" type="text/css" rel="stylesheet">
+    <script src="assets/js/smoothscroll.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/main.js" type="text/javascript" charset="utf-8"></script>
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="content">
-            <!-- Absolute top navbar -->
-            <div class="content__top-navbar">
-                <!-- Brand -->
-                <div class="content__logo-box">
-                    <a href="https://praxand.ga" class="content__logo">Praxand</a>
-                </div>
-                <!-- Social SVG icons -->
-                <div class="content__social-box">
-                    <ul class="list list--social">
-                        <li title="Gmail" class="list__item">
-                            <a href="mailto:jay.cheung2005@gmail.com" class="list__link">
-                                <svg class="list__icon">
-                                    <use xlink:href="img/sprite.min.svg#icon-gmail"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li title="Github" class="list__item">
-                            <a href="https://github.com/Praxand" class="list__link" target="_blank">
-                                <svg class="list__icon">
-                                    <use xlink:href="img/sprite.min.svg#icon-github"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li title="Discord" class="list__item">
-                            <a href="https://discord.com/invite/gknZCq4" class="list__link" target="_blank">
-                                <svg class="list__icon">
-                                    <use xlink:href="img/sprite.min.svg#icon-discord"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <div class="fullscreen">
+        <div class="background" style="background-image: url('assets/images/background.gif');"></div>
+        <script type="text/javascript">
+            var images = ['assets/images/background.gif'];
+            document.getElementsByClassName('background')[0].style.backgroundImage = 'url(' + images[Math.floor(Math
+                .random() * images.length)] + ')';
+        </script>
+        <style>
+            .cursor {
+                animation: 1s blink step-end infinite;
+                font-weight: bolder;
+            }
+
+            @keyframes blink {
+
+                from,
+                to {
+                    opacity: 0;
+                }
+
+                50% {
+                    opacity: 1;
+                }
+            }
+        </style>
+
+        <!-- Custom Website Code-->
+        <div class="center-object">
+            <div class="me">
+                <img draggable="false" src="assets/images/profile.jpg" class="image-title" hspace="5">
+                <h1 class="title" style="width: 100%;text-align: center">Praxand</h1>
+                <span class="undertitle" style="width: 100%;text-align: center">Content Creator</span>
             </div>
-            <!-- Mock navbar height element -->
-            <div class="content__navbar-filler"></div>
-            <!-- Vertically centered div -->
-            <div class="content__main-box">
-                <!-- User image -->
-                <div class="content__img-box">
-                    <img src="/img/logo.jpg" alt="Praxand" class="content__img">
-                </div>
-                <!-- Full name and title -->
-                <div class="content__intro-box">
-                    <h1 class="heading-primary">
-                        <span class="heading-primary--main">Praxand</span>
-                        <span class="heading-primary--sub">Content Creator & Developer</span>
-                    </h1>
-                </div>
-                <!-- Call to action buttons -->
-                <div class="content__cta-box mb-2">
-                    <a href="https://twitter.com/Praxand_" class="btn btn--ghost" target="_blank">Twitter</a>
-                    <a href="https://www.instagram.com/praxand/" class="btn btn--ghost" target="_blank">Instagram</a>
-                    <a href="https://steamcommunity.com/id/Praxand" class="btn btn--ghost" target="_blank">Steam</a>
-                    <a href="https://www.youtube.com/Praxand" class="btn btn--ghost" target="_blank">Youtube</a>
-                    <a href="https://www.twitch.tv/Praxand" class="btn btn--ghost" target="_blank">Twitch</a>
-                </div>
-                <div></div>
-            </div>
-            <!-- User skills bar -->
-            <div class="content__skills">
-                <ul class="list list--skills">
-                    <li title="HTML5" class="list__item">
-                        <svg class="list__icon">
-                            <use xlink:href="img/sprite.min.svg#icon-html"></use>
-                        </svg>
-                    </li>
-                    <li title="CSS3" class="list__item">
-                        <svg class="list__icon">
-                            <use xlink:href="img/sprite.min.svg#icon-css"></use>
-                        </svg>
-                    </li>
-                    <li title="JavaScript" class="list__item">
-                        <svg class="list__icon">
-                            <use xlink:href="img/sprite.min.svg#icon-js"></use>
-                        </svg>
-                    </li>
-                </ul>
+            <div class="buttons">
+                <a href="https://discord.gg/WvgHCQWrsf" class="btn animation discord hover" target="_blank">Discord</a>
+                <a href="https://twitter.com/Praxand_" class="btn animation twitter hover" target="_blank">Twitter</a>
+                <a href="https://github.com/Praxand" class="btn animation github hover" target="_blank">GitHub</a>
+                <a href="https://steamcommunity.com/id/Praxand" class="btn animation black hover"
+                    target="_blank">Steam</a>
+                <a href="https://youtube.com/Praxand" class="btn animation youtube hover" target="_blank">YouTube</a>
             </div>
         </div>
+
+        <a href="#information">
+            <div id="fade" class="arrow bounce"></div>
+        </a>
     </div>
+
+    <section class="container" id="information">
+        <div class="box-container row">
+            <div class="one-full column">
+                <h1 style="color:#98ff98"></i> About Me:</h1>
+            </div>
+            <div class="one-full column">
+                <p style="font-size:20">
+                    Welcome all! My name is <span class="youtube-text">Jay</span>, also known as <span
+                        class="youtube-text">Praxand</span> on social media. I like to code random stuff, play video games and make content for youtube.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="end">
+        <div class="box-container row">
+            <div class="flex-grid">
+                <div class="col-xs">
+                    <div class="one-full column">
+                        <p style="font-size:160%;text-align: center"><span style="color:#98ff98">End Of Page</span><a
+                                href="https://twitter.com/FireMonkey__/status/1241796673539579905?s=20"
+                                target="_blank"><span class="cursor" style="color:#98ff98">_</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
