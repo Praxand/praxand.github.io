@@ -1512,11 +1512,6 @@ button.black {
     box-shadow: 0 3px 0 0 rgba(0,0,0,0.5)
 }
 
-button.green {
-    background-color: #45DD57;
-    box-shadow: 0 3px 0 0 rgba(69,221,87,0.5)
-}
-
 button.blurple {
     background-color: #7289da;
     box-shadow: 0 3px 0 0 rgba(114,137,218,0.5)
