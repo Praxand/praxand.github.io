@@ -12,28 +12,54 @@
     <meta content="Praxand's Website" name="description" />
     <meta name="theme-color" content="#98ff98">
     <meta content="https://praxand.ga/assets/images/profile.jpg" property="og:image" />
-    <link rel="icon" type="image/x-icon" href="assets/images/profile.jpg">
+    <link rel="icon" type="image/x-icon" href="assets/images/profile.png">
 
-    <!-- CSS -->
-    <link href="assets/css/main.css" type="text/css" rel="stylesheet">
+    <!-- CSS & JavaScript -->
+    <link href="assets/css/modesta.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/emoji.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/custom.css" type="text/css" rel="stylesheet">
+    <script src="assets/js/smoothscroll.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/main.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
 <body>
     <div class="fullscreen">
-        <div class="background" style="background-image: url('assets/images/background.gif');"></div>
+        <div class="background" style="background-image: url('assets/images/background.png');"></div>
+        <style>
+            .cursor {
+                animation: 1s blink step-end infinite;
+                font-weight: bolder;
+            }
+
+            @keyframes blink {
+
+                from,
+                to {
+                    opacity: 0;
+                }
+
+                50% {
+                    opacity: 1;
+                }
+            }
+        </style>
 
         <!-- Custom Website Code-->
         <div class="center-object">
             <div class="me">
-                <img draggable="false" src="assets/images/profile.jpg" class="image-title" hspace="5">
+                <img draggable="false" src="assets/images/profile.png" class="image-title" hspace="5">
                 <h1 class="title" style="width: 100%;text-align: center">Praxand</h1>
             </div>
             <div class="buttons">
                 <a href="https://discord.gg/MtbbK9kk8e" class="btn animation discord hover" target="_blank">Discord</a>
-                <a href="https://twitter.com/Praxand_" class="btn animation twitter hover" target="_blank">Twitter</a>
-                <a href="https://instagram.com/Praxand" class="btn animation instagram hover" target="_blank">Instagram</a>
+                <a href="https://twitter.com/PraxandOfficial" class="btn animation twitter hover"
+                    target="_blank">Twitter</a>
+                <a href="https://instagram.com/praxand" class="btn animation instagram hover"
+                    target="_blank">Instagram</a>
+                <a href="https://steamcommunity.com/id/Praxand" class="btn animation steam hover"
+                    target="_blank">Steam</a>
                 <a href="https://youtube.com/Praxand" class="btn animation youtube hover" target="_blank">YouTube</a>
-                <a href="https://steamlevels.com/r/praxand" class="btn animation steamlevels hover" target="_blank">SteamLevels</a>
+                <a href="https://twitch.tv/Praxand" class="btn animation twitch hover" target="_blank">Twitch</a>
             </div>
         </div>
     </div>
